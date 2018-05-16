@@ -1,4 +1,5 @@
 <category id="catLine">
+  <block type="line_ifttt">
     <value name="line_ifttt_event">
       <block type="text">
         <field name="TEXT"></field>
@@ -24,4 +25,5 @@
         <field name="TEXT"></field>
       </block>
     </value>
+  </block>
 </category>

@@ -19,6 +19,7 @@ Blockly.JavaScript['line_ifttt'] = function(block) {
   if (v3.length > 0) {
     arr.push("'value3='+" + v3);
   }
+  console.log(arr,arr.length);
 
   switch (arr.length) {
     case 1:

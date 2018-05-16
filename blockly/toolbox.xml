@@ -1,0 +1,27 @@
+<category id="catLine">
+    <value name="line_ifttt_event">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="line_ifttt_key">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="line_ifttt_value1">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="line_ifttt_value2">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="line_ifttt_value3">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+</category>

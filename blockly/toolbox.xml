@@ -2,7 +2,7 @@
   <block type="line_ifttt">
     <value name="line_ifttt_event">
       <block type="text">
-        <field name="TEXT"></field>
+        <field name="TEXT">webhook</field>
       </block>
     </value>
     <value name="line_ifttt_key">

@@ -25,6 +25,6 @@ Blockly.Blocks['line_ifttt'] = {
     this.setNextStatement(true, null);
     this.setColour(230);
  this.setTooltip("");
- this.setHelpUrl("");
+ this.setHelpUrl("http://www.oxxostudio.tw/articles/201803/ifttt-line.html");
   }
 };

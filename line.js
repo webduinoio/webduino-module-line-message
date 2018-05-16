@@ -22,6 +22,17 @@
     });
   }
 
+  function line_bot(token, uid, msg) {
+    $.post('https://script.google.com/macros/s/AKfycbzOzfPS__pqe8TNRvage6-v-ClFfq0-TVKByiICK76wJxyb-lt5/exec', {
+      token: token,
+      uid: uid,
+      msg: msg
+    }, function(e) {
+      console.log(e);
+    });
+  }
+
   window.line_ifttt = line_ifttt;
+  window.line_bot = line_bot;
 
 }(window, window.document));

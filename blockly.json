@@ -1,5 +1,5 @@
 {
-  "types": ["line_ifttt"],
+  "types": ["line_ifttt","line_bot"],
   "category": "catPlus",
   "scripts": [
     "blockly/blocks.js",

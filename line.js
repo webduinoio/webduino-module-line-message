@@ -2,7 +2,7 @@
 
   'use strict';
 
-  function ifttt(event, key, v1, v2, v3) {
+  function line_ifttt(event, key, v1, v2, v3) {
 
     var obj = {};
 
@@ -22,6 +22,6 @@
     });
   }
 
-  window.ifttt = ifttt;
+  window.line_ifttt = line_ifttt;
 
 }(window, window.document));

@@ -12,3 +12,13 @@
 ![](media/line_notify_ifttt.jpg)
 
 
+## LINE BOT
+
+除了用 IFTTT，如果會設定 LINE 機器人，也可以透過 push message 的方式，讓機器人發送訊息給自己。
+
+> 原理參考：[實作 LINE 聊天機器人 ( Google Apps Script )](http://www.oxxostudio.tw/articles/201804/line-bot-apps-script.html)
+
+![](media/line_bot.jpg)
+
+
+

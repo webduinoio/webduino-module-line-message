@@ -5,7 +5,7 @@ Blockly.JavaScript['line_ifttt'] = function(block) {
   var v2 = Blockly.JavaScript.valueToCode(block, 'line_ifttt_value2', Blockly.JavaScript.ORDER_ATOMIC);
   var v3 = Blockly.JavaScript.valueToCode(block, 'line_ifttt_value3', Blockly.JavaScript.ORDER_ATOMIC);
 
-  var code = 'ifttt(event,key,v1,v2,v3);';
+  var code = 'ifttt(' + event + ',' + key + ',' + v1 + ',' + v2 + ',' + v3 + ');';
 
   return code;
 };

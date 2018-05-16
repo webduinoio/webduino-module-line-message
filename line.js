@@ -23,7 +23,7 @@
   }
 
   function line_bot(token, uid, msg) {
-    $.post('https://script.google.com/macros/s/AKfycbzOzfPS__pqe8TNRvage6-v-ClFfq0-TVKByiICK76wJxyb-lt5/exec', {
+    $.post('https://script.google.com/macros/s/AKfycbwM1sSrweL1tv-UsyDnG-rUjMgXSzDLA1p5HAH64lXPOP8pcVE/exec', {
       token: token,
       uid: uid,
       msg: msg

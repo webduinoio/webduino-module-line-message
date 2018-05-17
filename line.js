@@ -23,7 +23,7 @@
     var data = {
       token : token
     };
-    if(typeof msg == 'string'){
+    if(typeof msg != 'object'){
       data.message = msg;
     }else{
       data.message = msg.message;

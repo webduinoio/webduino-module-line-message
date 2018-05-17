@@ -28,6 +28,7 @@ Blockly.JavaScript['line_notify'] = function(block) {
   if(msg.length == 0){
   	msg = "''";
   }
+
   var code = 'line_notify(' + token + ',' + msg + ');';
 
   return code;

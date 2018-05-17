@@ -20,18 +20,20 @@
   }
 
   function line_notify(token, msg) {
-    $.ajax({
-      url: 'https://notify-api.line.me/api/notify',
-      type: "POST",
-      headers: {
-        Authorization: 'Bearer ' +  token
-      },
-      data: {
-        message: msg
-      },
-      success: function() {
-        console.log(msg);
-      }
+    var data = {
+      token : token
+    };
+    if(typeof msg == 'string'){
+      data.message = msg;
+    }else{
+      data.message = msg.message;
+      data.stickerPackageId = msg.stickerPackageId;
+      data.stickerId = msg.stickerId;
+    }
+
+    $.post('https://script.google.com/macros/s/AKfycbyJClsatp_iLXCzBfdhqaQGriloa0JS5BwMldbyO25M8KiNVUs/exec',
+      data,function(e){
+      console.log(e);
     });
   }
 

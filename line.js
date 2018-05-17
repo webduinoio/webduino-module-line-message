@@ -46,6 +46,7 @@
   }
 
   window.line_ifttt = line_ifttt;
+  window.line_notify = line_notify;
   window.line_bot = line_bot;
 
 }(window, window.document));

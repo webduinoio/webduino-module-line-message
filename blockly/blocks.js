@@ -12,15 +12,15 @@ Blockly.Blocks['line_ifttt'] = {
     this.appendValueInput("line_ifttt_value1")
       .setCheck(null)
       .setAlign(Blockly.ALIGN_RIGHT)
-      .appendField("Value 1 :");
+      .appendField(Blockly.Msg.LINE_V1);
     this.appendValueInput("line_ifttt_value2")
       .setCheck(null)
       .setAlign(Blockly.ALIGN_RIGHT)
-      .appendField("Value 2 :");
+      .appendField(Blockly.Msg.LINE_V2);
     this.appendValueInput("line_ifttt_value3")
       .setCheck(null)
       .setAlign(Blockly.ALIGN_RIGHT)
-      .appendField("Value 3 :");
+      .appendField(Blockly.Msg.LINE_V3);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
@@ -39,7 +39,7 @@ Blockly.Blocks['line_notify'] = {
     this.appendValueInput("line_notify_msg")
       .setCheck(null)
       .setAlign(Blockly.ALIGN_RIGHT)
-      .appendField("Message :");
+      .appendField(Blockly.Msg.LINE_MSG);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
@@ -62,7 +62,7 @@ Blockly.Blocks['line_bot'] = {
     this.appendValueInput("line_bot_msg")
       .setCheck(null)
       .setAlign(Blockly.ALIGN_RIGHT)
-      .appendField("Message :");
+      .appendField(Blockly.Msg.LINE_MSG);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
@@ -76,11 +76,11 @@ Blockly.Blocks['line_sticker'] = {
   init: function() {
     this.appendValueInput("package")
       .setCheck(null)
-      .appendField("Sticker :")
-      .appendField("STKVER");
+      .appendField(Blockly.Msg.LINE_STICKER)
+      .appendField(Blockly.Msg.LINE_STKVER);
     this.appendValueInput("sticker")
       .setCheck(null)
-      .appendField("STKID");
+      .appendField(Blockly.Msg.LINE_STKID);
     this.setInputsInline(true);
     this.setOutput(true, null);
     this.setColour(180);

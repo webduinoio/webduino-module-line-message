@@ -76,7 +76,6 @@ Blockly.Blocks['line_sticker'] = {
   init: function() {
     this.appendValueInput("package")
       .setCheck(null)
-      .appendField(Blockly.Msg.LINE_STICKER)
       .appendField(Blockly.Msg.LINE_STKVER);
     this.appendValueInput("sticker")
       .setCheck(null)

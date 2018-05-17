@@ -21,30 +21,42 @@
 
   function line_notify(token, msg) {
     var data = {
-      token : token
+      token: token
     };
-    if(typeof msg != 'object'){
+    if (typeof msg != 'object') {
       data.message = msg;
-    }else{
+    } else {
       data.message = msg.message;
       data.stickerPackageId = msg.stickerPackageId;
       data.stickerId = msg.stickerId;
     }
 
     $.post('https://script.google.com/macros/s/AKfycbyJClsatp_iLXCzBfdhqaQGriloa0JS5BwMldbyO25M8KiNVUs/exec',
-      data,function(e){
-      console.log(e);
-    });
+      data,
+      function(e) {
+        console.log(e);
+      });
   }
 
   function line_bot(token, uid, msg) {
-    $.post('https://script.google.com/macros/s/AKfycbwM1sSrweL1tv-UsyDnG-rUjMgXSzDLA1p5HAH64lXPOP8pcVE/exec', {
+    var data = {
       token: token,
-      uid: uid,
-      msg: msg
-    }, function(e) {
-      console.log(e);
-    });
+      uid: uid
+    };
+    if (typeof msg != 'object') {
+      data.type = 'text';
+      data.text = msg;
+    } else {
+      data.type = 'sticker';
+      data.text = '';
+      data.packageId = msg.stickerPackageId;
+      data.stickerId = msg.stickerId;
+    }
+    $.post('https://script.google.com/macros/s/AKfycbwM1sSrweL1tv-UsyDnG-rUjMgXSzDLA1p5HAH64lXPOP8pcVE/exec',
+      data,
+      function(e) {
+        console.log(e);
+      });
   }
 
   window.line_ifttt = line_ifttt;

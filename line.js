@@ -3,9 +3,7 @@
   'use strict';
 
   function line_ifttt(event, key, v1, v2, v3) {
-
     var obj = {};
-
     if (v1 != "''" || v1.length > 0) {
       obj.value1 = v1;
     }
@@ -15,10 +13,25 @@
     if (v3 != "''" || v1.length > 0) {
       obj.value3 = v3;
     }
-
     var uri = 'https://maker.ifttt.com/trigger/' + event + '/with/key/' + key;
     $.post(uri, obj, function(e) {
       console.log(e);
+    });
+  }
+
+  function line_notify(token, msg) {
+    $.ajax({
+      url: 'https://notify-api.line.me/api/notify',
+      type: "POST",
+      headers: {
+        Authorization: 'Bearer ' +  token
+      },
+      data: {
+        message: msg
+      },
+      success: function() {
+        console.log(msg);
+      }
     });
   }
 

@@ -21,6 +21,19 @@ Blockly.JavaScript['line_ifttt'] = function(block) {
 };
 
 
+Blockly.JavaScript['line_notify'] = function(block) {
+  var token = Blockly.JavaScript.valueToCode(block, 'line_notify_token', Blockly.JavaScript.ORDER_ATOMIC);
+  var msg = Blockly.JavaScript.valueToCode(block, 'line_notify_msg', Blockly.JavaScript.ORDER_ATOMIC);
+
+  if(msg.length == 0){
+  	msg = "''";
+  }
+  var code = 'line_notify(' + token + ',' + msg + ');';
+
+  return code;
+};
+
+
 Blockly.JavaScript['line_bot'] = function(block) {
   var token = Blockly.JavaScript.valueToCode(block, 'line_bot_token', Blockly.JavaScript.ORDER_ATOMIC);
   var uid = Blockly.JavaScript.valueToCode(block, 'line_bot_uid', Blockly.JavaScript.ORDER_ATOMIC);

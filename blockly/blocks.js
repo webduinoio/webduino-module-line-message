@@ -29,6 +29,25 @@ Blockly.Blocks['line_ifttt'] = {
   }
 };
 
+Blockly.Blocks['line_notify'] = {
+  init: function() {
+    this.appendValueInput("line_notify_token")
+        .setCheck(null)
+        .setAlign(Blockly.ALIGN_RIGHT)
+        .appendField("LINE ( Notify )")
+        .appendField("Token :");
+    this.appendValueInput("line_notify_msg")
+        .setCheck(null)
+        .setAlign(Blockly.ALIGN_RIGHT)
+        .appendField("Message :");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("http://www.oxxostudio.tw/articles/201804/line-bot-apps-script.html");
+  }
+};
+
 Blockly.Blocks['line_bot'] = {
   init: function() {
     this.appendValueInput("line_bot_token")

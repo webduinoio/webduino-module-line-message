@@ -1,6 +1,8 @@
 # LINE 推播積木
 
-## IFTTT
+-----
+
+## IFTTT + LINE Notify
 
 註冊 IFTTT 後，設定 webhook event 並取得 key，就能透過 LINE IFTTT 積木發送訊息至 LINE Notify。
 
@@ -8,9 +10,19 @@
 >
 > 如何註冊 IFTTT 及原理參考：[IFTTT 發送 LINE 訊息通知](http://www.oxxostudio.tw/articles/201803/ifttt-line.html)
 
-
 ![](media/line_notify_ifttt.jpg)
 
+-----
+
+## 自建 LINE Notify
+
+除了用 IFTTT，如果會設定 LINE Notify，也可以發送訊息給自己，也可以傳送貼圖給自己。
+
+> 貼圖清單：[LINE Sticker List](https://devdocs.line.me/files/sticker_list.pdf)
+
+![](media/line_notify.jpg)
+
+-----
 
 ## LINE BOT
 

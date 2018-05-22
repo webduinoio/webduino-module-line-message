@@ -23,7 +23,7 @@ Blockly.Blocks['line_ifttt'] = {
       .appendField(Blockly.Msg.LINE_V3);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(230);
+    this.setColour(120);
     this.setTooltip("");
     this.setHelpUrl("http://www.oxxostudio.tw/articles/201803/ifttt-line.html");
   }
@@ -42,7 +42,7 @@ Blockly.Blocks['line_notify'] = {
       .appendField(Blockly.Msg.LINE_MSG);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(230);
+    this.setColour(120);
     this.setTooltip("");
     this.setHelpUrl("http://www.oxxostudio.tw/articles/201804/line-bot-apps-script.html");
   }
@@ -65,7 +65,7 @@ Blockly.Blocks['line_bot'] = {
       .appendField(Blockly.Msg.LINE_MSG);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(230);
+    this.setColour(120);
     this.setTooltip("");
     this.setHelpUrl("http://www.oxxostudio.tw/articles/201804/line-bot-apps-script.html");
   }
@@ -82,7 +82,7 @@ Blockly.Blocks['line_sticker'] = {
       .appendField(Blockly.Msg.LINE_STKID);
     this.setInputsInline(true);
     this.setOutput(true, null);
-    this.setColour(180);
+    this.setColour(90);
     this.setTooltip("");
     this.setHelpUrl("https://devdocs.line.me/files/sticker_list.pdf");
   }

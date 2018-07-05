@@ -52,7 +52,7 @@ Blockly.JavaScript['line_sticker'] = function(block) {
   var package = Blockly.JavaScript.valueToCode(block, 'package', Blockly.JavaScript.ORDER_ATOMIC);
   var sticker = Blockly.JavaScript.valueToCode(block, 'sticker', Blockly.JavaScript.ORDER_ATOMIC);
   var code = '{message:" ",stickerPackageId:"' + package + '",stickerId:"' + sticker + '"}';
-  return [code, Blockly.JavaScript.ORDER_NONE];
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 

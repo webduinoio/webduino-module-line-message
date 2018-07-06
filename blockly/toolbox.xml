@@ -67,4 +67,11 @@
       </block>
     </value>
   </block>
+  <block type="line_image">
+    <value name="img_url">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
 </category>

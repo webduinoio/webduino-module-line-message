@@ -1,5 +1,5 @@
 Blockly.Blocks['line_ifttt'] = {
-  init: function() {
+  init: function () {
     this.appendValueInput("line_ifttt_event")
       .setCheck(null)
       .setAlign(Blockly.ALIGN_RIGHT)
@@ -30,7 +30,7 @@ Blockly.Blocks['line_ifttt'] = {
 };
 
 Blockly.Blocks['line_notify'] = {
-  init: function() {
+  init: function () {
     this.appendValueInput("line_notify_token")
       .setCheck(null)
       .setAlign(Blockly.ALIGN_RIGHT)
@@ -49,7 +49,7 @@ Blockly.Blocks['line_notify'] = {
 };
 
 Blockly.Blocks['line_bot'] = {
-  init: function() {
+  init: function () {
     this.appendValueInput("line_bot_token")
       .setCheck(null)
       .setAlign(Blockly.ALIGN_RIGHT)
@@ -73,7 +73,7 @@ Blockly.Blocks['line_bot'] = {
 
 
 Blockly.Blocks['line_sticker'] = {
-  init: function() {
+  init: function () {
     this.appendValueInput("package")
       .setCheck(null)
       .appendField(Blockly.Msg.LINE_STKVER);
@@ -85,5 +85,17 @@ Blockly.Blocks['line_sticker'] = {
     this.setColour(90);
     this.setTooltip("");
     this.setHelpUrl("https://devdocs.line.me/files/sticker_list.pdf");
+  }
+};
+
+Blockly.Blocks['line_image'] = {
+  init: function () {
+    this.appendValueInput("img_url")
+      .setCheck("String")
+      .appendField("圖片網址：");
+    this.setOutput(true, null);
+    this.setColour(90);
+    this.setTooltip("");
+    this.setHelpUrl("http://www.oxxostudio.tw/articles/201804/line-bot-apps-script.html");
   }
 };

@@ -51,8 +51,13 @@ Blockly.JavaScript['line_bot'] = function(block) {
 Blockly.JavaScript['line_sticker'] = function(block) {
   var package = Blockly.JavaScript.valueToCode(block, 'package', Blockly.JavaScript.ORDER_ATOMIC);
   var sticker = Blockly.JavaScript.valueToCode(block, 'sticker', Blockly.JavaScript.ORDER_ATOMIC);
-  var code = '{message:" ",stickerPackageId:"' + package + '",stickerId:"' + sticker + '"}';
+  var code = '{message:" ",stickerPackageId:"' + package + '",stickerId:"' + sticker + '",type:"sticker"}';
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
+Blockly.JavaScript['line_image'] = function(block) {
+  var value_img_url = Blockly.JavaScript.valueToCode(block, 'img_url', Blockly.JavaScript.ORDER_ATOMIC);
+  var code = '{message:" ",imageUri:' + value_img_url + ',type:"image"}';
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
+};
 
